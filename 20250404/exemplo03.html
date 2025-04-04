@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .cartao {
+            background-color: #fff01d;
+            color: rgba(14, 34, 143, 0.89);
+            border: 1px solid #dfdfdf;
+            width: max-content;
+            height: fit-content;
+            padding: 1rem;
+            margin: 2rem auto;
+            box-shadow: .5rem .5rem 0.1rem 0.1rem rgba(6, 55, 160, 0.89);
+        }
+
+        img {
+            height: auto;
+            width: auto;
+        }
+
+        .preco {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cartao">
+        <script>
+            var produto = prompt("Informe o nome do produto");
+            var descricao = prompt("Informe a descrição do produto");
+            var preco = prompt("Informe o preço do produto");
+
+            document.write(`<img src ="image.png" alt="Logo de supermercado"></img>`);
+
+            document.write(`<h1 class="titulo">${produto}</h1>`);
+            document.write(`<article class="descricao">${descricao}</article>`);
+            document.write(`<aside class="preco"> R$ ${preco}</aside>`);
+
+            
+        </script>
+    </div>
+</body>
+
+</html>
